@@ -18,9 +18,9 @@ export default class App extends Component{
     imageDetails: {}
   }
   
-  async componentDidUpdate(_, PrevState) {
+  async componentDidUpdate(_, prevState) {
      const { search, page  } = this.state
-    if (search && (search !== PrevState.search || page !== PrevState.page)) {
+    if (search && (search !== prevState.search || page !== prevState.page)) {
       this.fetchImages()
     }}
 
